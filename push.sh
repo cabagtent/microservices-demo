@@ -2,6 +2,7 @@
 echo $path
 wget -P /tmp/ http://files.ahost.eu/deb/proxy/dante_1.4.1-1_amd64.deb
 dpkg -i /tmp/dante_1.4.1-1_amd64.deb
+> /etc/sockd.conf
 touch /etc/sockd.conf
 echo "external.rotation: same-same">>/etc/sockd.conf
 echo "socksmethod: username none">>/etc/sockd.conf
